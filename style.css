@@ -1,0 +1,206 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: GTWalsheim, system-ui, sans-serif;
+  color: rgb(39, 48, 54);
+  background: rgb(243, 244, 245);
+}
+.header {
+  margin: 0 0 1rem;
+  text-align: center;
+  position: relative;
+  z-index: 10;
+}
+.header h1 {
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  color: rgba(27, 27, 27, 0.8);
+  line-height: 1;
+  margin: 0 0 0.125em;
+  letter-spacing: 0.01em;
+  text-align: center;
+  font-weight: 600;
+}
+.header__links {
+  margin: 0.5em auto 0;
+  padding-top: 0.25em;
+  max-width: 26.75rem;
+  border-top: 1px solid rgba(16, 16, 16, 0.5);
+}
+.header__links a {
+  font-size: 0.875rem;
+  color: #0099ff;
+  text-decoration: none;
+  padding: 0 0.5rem;
+  opacity: 0.8;
+  transition: opacity 0.3s ease-out;
+  white-space: nowrap;
+  font-weight: 400;
+}
+.header__links a svg {
+  width: 1.35em;
+  height: 1.35em;
+  display: inline-block;
+  fill: #000000;
+  vertical-align: -0.3em;
+  margin-top: -0.125rem;
+}
+.hello {
+  background-color: #fff;
+  border-radius: 0.75rem;
+  box-shadow: 0 0.5rem 0.75rem -0.25rem rgba(39, 48, 54, 0.05);
+}
+.configuration {
+  flex: 1 1 auto;
+  z-index: 2;
+  padding-left: 5rem;
+  padding-right: 5rem;
+  position: relative;
+  padding-top: 2.5rem;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 50rem;
+}
+.group {
+  background-color: #f3f4f5;
+  border-radius: 0.5rem;
+}
+.active-wave {
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border: 0;
+  padding: 0;
+  outline: none;
+  cursor: pointer;
+  -webkit-transition: background 200ms ease;
+  transition: background 200ms ease;
+  background: #0099ff;
+  color: #fff;
+  -webkit-transition: all 200ms ease;
+  transition: all 200ms ease;
+  height: 2.5rem;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: 600;
+  line-height: 1.05;
+  padding-left: 0;
+  padding-right: 0;
+  border-radius: 0.5rem;
+  width: 2.5rem;
+}
+.normal-wave {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  outline: none;
+  cursor: pointer;
+  -webkit-transition: background 200ms ease;
+  transition: background 200ms ease;
+  border: none;
+  color: inherit;
+  height: 2.5rem;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: 600;
+  line-height: 1.05;
+  padding-left: 0;
+  padding-right: 0;
+  border-radius: 0;
+  width: 2.5rem;
+}
+.nice {
+  margin-right: 0.75rem;
+}
+.nice__2 {
+  margin-left: 0.75rem;
+}
+.points {
+  appearance: none;
+  margin: 18px 0;
+  width: 100%;
+}
+.random {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border: 0;
+  padding: 0;
+  outline: none;
+  cursor: pointer;
+  -webkit-transition: background 200ms ease;
+  transition: background 200ms ease;
+  background: #0099ff;
+  color: #fff;
+  -webkit-transition: all 200ms ease;
+  transition: all 200ms ease;
+  height: 3rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: 600;
+  line-height: 1.05;
+  padding-left: 0;
+  padding-right: 0;
+  border-radius: 100%;
+  width: 4rem;
+  height: 4rem;
+}
+path {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.active {
+  background: green;
+}
+.big-wave {
+  padding: 50px 0;
+  background: #ffffff;
+}
+.footer {
+  background: #1d1f21;
+  min-height: 2rem;
+  text-align: center;
+  color: #fff9;
+  font-size: 0.875rem;
+  line-height: 1.2rem;
+  padding: 0.4rem 0;
+}
+.footer_heart {
+  padding: 0 0.125em;
+  color: #3023ae;
+}
+.footer a {
+  text-decoration: none;
+  color: #fffc;
+}
+@media only screen and (max-width: 768px) {
+  .group-leader {
+    flex-direction: column;
+    align-items: center;
+  }
+}
